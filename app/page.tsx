@@ -118,7 +118,7 @@ export default function Home() {
                 setStatusMessage("Successfully withdrew all funds");
             }
         }
-    }, [isConfirmed, statusMessage, depositAmount, withdrawAmount]);
+    }, [isConfirmed, statusMessage, depositAmount, withdrawAmount, refetchBalance, refetchWalletBalance]);
 
 
     const isDepositLoading = currentAction === 'deposit' && (isWriteLoading || isConfirming);
