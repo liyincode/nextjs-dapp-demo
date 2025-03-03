@@ -24,9 +24,7 @@ export const metadata: Metadata = {
     description: "nextjs dapp demo",
 };
 
-export default async function RootLayout({
-                                             children,
-                                         }: Readonly<{
+export default async function RootLayout({children,}: Readonly<{
     children: React.ReactNode;
 }>) {
     const initialState = cookieToInitialState(
