@@ -1,36 +1,40 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Ethereum Deposit DApp
+
+A simple Ethereum DApp deployed on the Sepolia testnet that allows interaction with a basic deposit contract.
+
+## Features
+
+- Connect to Ethereum wallet (MetaMask)
+- View wallet and contract balances
+- Deposit ETH to the contract
+- Withdraw ETH from the contract
+- Owner withdrawal functionality
+
+## Technologies
+
+- Next.js
+- TypeScript
+- wagmi
+- Tailwind CSS
+- Solidity (smart contract)
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies with `npm install`
+3. Run the development server with `npm run dev`
+4. Connect your wallet to the Sepolia testnet
+5. Interact with the contract through the UI
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Contract
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The DApp interacts with a simple Solidity contract that manages ETH deposits and withdrawals. The contract is deployed on the Sepolia testnet.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Prerequisites
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- MetaMask or compatible wallet
+- Some Sepolia testnet ETH
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Built as a demonstration of Web3 interactions with Ethereum smart contracts.
